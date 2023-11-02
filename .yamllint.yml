@@ -1,0 +1,7 @@
+extends: default
+rules:
+  document-start: disable
+  new-lines: disable
+  empty-lines: disable
+  comments-indentation: disable
+  truthy: disable
