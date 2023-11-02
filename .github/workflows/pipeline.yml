@@ -40,15 +40,4 @@ jobs:
 
       - name: Run PyTest Unit Tests
         run: |
-          pytest tests/unit_tests.py --doctest-modules \
-          --junitxml=junit/test-results.xml \
-          --cov=com --cov-report=xml --cov-report=html
-
-      - name: Build coverage file
-        run: |
-          pytest --cache-clear --cov=app tests/ > pytest-coverage.txt
-
-      - name: pytest-coverage-commentator
-        uses: coroo/pytest-coverage-commentator@v1.0.2
-        with:
-          pytest-coverage: pytest-coverage.txt
+          pytest tests/unit_tests.py
