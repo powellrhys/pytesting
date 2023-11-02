@@ -1,4 +1,4 @@
-from functions import add
+from functions.functions import add
 
 
 def test_add():

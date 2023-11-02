@@ -40,4 +40,4 @@ jobs:
 
       - name: Run PyTest Unit Tests
         run: |
-          pytest unit_tests.py
+          pytest tests/unit_tests.py
